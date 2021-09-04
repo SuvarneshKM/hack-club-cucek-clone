@@ -30,7 +30,7 @@ function Navbar() {
         };
     }, []);
     return (
-        <nav className={`sticky top-0 z-50 grid grid-cols-3 ${handleShow ? "bg-white shadow-md " : ""}`}>
+        <nav className={`fixed top-0 z-50 grid grid-cols-3 ${handleShow ? "bg-light shadow-md " : ""}`}>
             <div className={`relative flex items-center ${handleShow ? "h-[69px] w-[124px]" : "h-[69px] w-[124px] lg:h-[96px] lg:w-[169.85px]"} ml-[16px] xl:ml-[100px] lg:ml-[50px] cursor-pointer`}>
                 <Image onClick={home} src="https://assets.hackclub.com/flag-orpheus-top.svg"
                     layout='fill'
@@ -39,7 +39,7 @@ function Navbar() {
                 />
             </div>
             {/* center */}
-            <div className={`hidden text-[18px] whitespace-nowrap font-medium text-dark md:inline-flex space-x-[50px] lg:space-x-[64px] ${handleShow ? "items-center" : "pt-[24px] lg:pt-[48px]"} `}>
+            <div className={`hidden text-[18px] whitespace-nowrap font-medium md:inline-flex space-x-[50px] lg:space-x-[64px] ${handleShow ? "items-center text-dark" : "pt-[24px] lg:pt-[48px] text-light"} `}>
                 <Link href="/events">
                     <a className="cursor-pointer hover:text-red">Events</a>
                 </Link>
@@ -56,25 +56,25 @@ function Navbar() {
                     <a className="cursor-pointer hover:text-red">Gallery</a>
                 </Link>
 
-                <div className={`hidden xl:inline-flex justify-end space-x-[18px] mr-[100px]`}>
+                <div className="hidden xl:inline-flex justify-end space-x-[18px] mr-[100px]">
                     <Link href="https://twitter.com/hackclubcucek/">
-                        <a target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center border-2 p-1 rounded-full bg-dark hover:bg-red hover:border-red cursor-pointer">
-                            <TwitterFillIcon className="text-light" />
+                        <a target="_blank" rel="noopener noreferrer" className={`flex h-8 w-8 items-center border-2 p-1 rounded-full ${handleShow ? "bg-dark" : "bg-light"} hover:bg-red hover:border-red cursor-pointer`}>
+                            <TwitterFillIcon className={`${handleShow ? "text-light" : "text-dark"}`} />
                         </a>
                     </Link>
                     <Link href="https://github.com/hackclub-cucek/" >
-                        <a target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center border-2 p-1 rounded-full bg-dark hover:bg-red hover:border-red cursor-pointer">
-                            <GithubLineIcon className="text-light" />
+                        <a target="_blank" rel="noopener noreferrer" className={`flex h-8 w-8 items-center border-2 p-1 rounded-full ${handleShow ? "bg-dark" : "bg-light"} hover:bg-red hover:border-red cursor-pointer`}>
+                            <GithubLineIcon className={`${handleShow ? "text-light" : "text-dark"}`} />
                         </a>
                     </Link>
                     <Link href="https://www.linkedin.com/company/hackclubcucek/" >
-                        <a target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center border-2 p-1 rounded-full bg-dark hover:bg-red hover:border-red cursor-pointer">
-                            <LinkedinFillIcon className="text-light" />
+                        <a target="_blank" rel="noopener noreferrer" className={`flex h-8 w-8 items-center border-2 p-1 rounded-full ${handleShow ? "bg-dark" : "bg-light"} hover:bg-red hover:border-red cursor-pointer`}>
+                            <LinkedinFillIcon className={`${handleShow ? "text-light" : "text-dark"}`} />
                         </a>
                     </Link>
                     <Link href="https://www.instagram.com/hackclubcucek/" >
-                        <a target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center border-2 p-1 rounded-full bg-dark hover:bg-red hover:border-red cursor-pointer">
-                            <InstagramLineIcon className="text-light" />
+                        <a target="_blank" rel="noopener noreferrer" className={`flex h-8 w-8 items-center border-2 p-1 rounded-full ${handleShow ? "bg-dark" : "bg-light"} hover:bg-red hover:border-red cursor-pointer`}>
+                            <InstagramLineIcon className={`${handleShow ? "text-light" : "text-dark"}`} />
                         </a>
                     </Link>
                 </div>
