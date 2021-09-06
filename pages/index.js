@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import Things from '../components/Things'
 import Initatives from '../components/Initatives'
 import Events from '../components/Events'
+import Gallery from '../components/Gallery'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Things />
         <Initatives />
         <Events />
+        <Gallery />
       </main>
     </div>
   )
