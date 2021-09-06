@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Things from '../components/Things'
+import Initatives from '../components/Initatives'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Banner />
       <main className="max-w-[1236px] mx-auto">
         <Things />
+        <Initatives />
       </main>
     </div>
   )
