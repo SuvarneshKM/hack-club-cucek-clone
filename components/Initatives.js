@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 function Initatives() {
     return (
-        <section>
+        <section className="lg:pt-[136px] pt-[80px]">
             <div className="flex flex-col text-center items-center">
                 <h1 className="lg:pt-[136px] pt-[80px] lg:w-[213px] lg:h-[41px] w-[160px] h-[30px] text-center text-dark font-bold lg:text-[32px] text-[24px] z-20">
-                    Things we do
+                    Our Initatives
                 </h1>
-                <div className="lg:w-[142px] w-[106.67px] h-[10px] lg:mr-14 mr-10 lg:h-[12px] bg-red lg:mt-[31px] mt-[22px] z-0 " />
+                <div className="lg:w-[139.33px] w-[104.67px] h-[10px] lg:mr-14 mr-10 lg:h-[12px] bg-red lg:mt-[31px] mt-[22px] z-0 " />
             </div>
             <div className="text-dark flex flex-col lg:flex-row lg:pt-[96px] pt-[32px] items-center justify-center">
                 <div className="relative lg:h-[440px] lg:w-[440px] h-[343px] w-[343px] flex-shrink-0 ">

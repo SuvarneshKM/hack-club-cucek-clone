@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Things from '../components/Things'
 import Initatives from '../components/Initatives'
+import Events from '../components/Events'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="max-w-[1236px] mx-auto">
         <Things />
         <Initatives />
+        <Events />
       </main>
     </div>
   )

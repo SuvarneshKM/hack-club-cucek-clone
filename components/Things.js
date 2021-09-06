@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 function Things() {
     return (
-        <section>
+        <section className="lg:pt-[48px] pt-[32px]">
             <div className="flex flex-col text-center items-center">
                 <h1 className="lg:pt-[48px] pt-[32px] lg:w-[213px] lg:h-[41px] w-[160px] h-[30px] text-center text-dark font-bold lg:text-[32px] text-[24px] z-20">
                     Things we do
