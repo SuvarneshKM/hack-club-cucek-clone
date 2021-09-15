@@ -5,6 +5,7 @@ import Things from '../components/Things'
 import Initatives from '../components/Initatives'
 import Events from '../components/Events'
 import Gallery from '../components/Gallery'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Initatives />
         <Events />
         <Gallery />
+        <Footer />
       </main>
     </div>
   )
